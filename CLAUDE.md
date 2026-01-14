@@ -87,6 +87,52 @@ or for custom scripts:
 /reaper/action/_SCRIPT_COMMAND_ID
 ```
 
+## Google Sheets Tracker
+
+### Spreadsheet
+- **Name:** Json OSC Tracker
+- **URL:** https://docs.google.com/spreadsheets/d/1D6jcJvcr5rz_RCZT8A0skEriLGfi5IhIGrYsnidb5Uw
+- **Tab:** Buttons
+
+### Columns
+| Column | Description |
+|--------|-------------|
+| button_id | Unique ID from JSON |
+| button_label | Display text |
+| page | Page 1-5 |
+| osc_address | REAPER action address |
+| linked_script | Related Lua script name |
+| date_added | When created |
+| notes | Any notes |
+
+### API Endpoint
+```
+https://script.google.com/macros/s/AKfycbx2SdVEimQWwDVQGhPluBlb-sXpVT4b2WH5klLsdxirs9THIXcfQ5PiCfJiDI1hMaEKkQ/exec
+```
+
+### Add a Button to Tracker
+```bash
+curl -L -H "Content-Type: application/json" \
+  -d '{
+    "tab": "Buttons",
+    "button_id": "BUTTON_ID",
+    "button_label": "Button Label",
+    "page": "1",
+    "osc_address": "/reaper/action/ACTION_ID",
+    "linked_script": "",
+    "date_added": "YYYY-MM-DD",
+    "notes": ""
+  }' \
+  "https://script.google.com/macros/s/AKfycbx2SdVEimQWwDVQGhPluBlb-sXpVT4b2WH5klLsdxirs9THIXcfQ5PiCfJiDI1hMaEKkQ/exec"
+```
+
+### Delete a Button from Tracker
+```bash
+curl -L -H "Content-Type: application/json" \
+  -d '{"action": "delete", "tab": "Buttons", "button_id": "BUTTON_ID"}' \
+  "https://script.google.com/macros/s/AKfycbx2SdVEimQWwDVQGhPluBlb-sXpVT4b2WH5klLsdxirs9THIXcfQ5PiCfJiDI1hMaEKkQ/exec"
+```
+
 ## Git Workflow
 
 ### After Making Changes (commit, push, and deploy)
@@ -120,6 +166,7 @@ cp "session.json" "session_backup_YYYY-MM-DD.json"
 - 2026-01-14: Reorganized layout: transport centered at top, uniform button grid below
 - 2026-01-14: Page_1 has 43 widgets total (38 buttons + 5 nav tabs)
 - 2026-01-14: Pages 2-5 are empty (ready for future content)
+- 2026-01-14: Set up Google Sheets tracker (Json OSC Tracker) with API integration
 
 ## Current State
 - **Working session:** `IPAD Surface 5Pages.json`
