@@ -116,3 +116,18 @@ cp "session.json" "session_backup_YYYY-MM-DD.json"
 *Add notes here as we work together.*
 
 - 2026-01-14: Created 5-page navigation system with working tab switching
+- 2026-01-14: Added MainPanel widgets (38 buttons) to Page_1
+- 2026-01-14: Reorganized layout: transport centered at top, uniform button grid below
+- 2026-01-14: Page_1 has 43 widgets total (38 buttons + 5 nav tabs)
+- 2026-01-14: Pages 2-5 are empty (ready for future content)
+
+## Current State
+- **Working session:** `IPAD Surface 5Pages.json`
+- **Page_1:** Transport at top, 32 other buttons in grid, 5 nav tabs at bottom
+- **Pages 2-5:** Only nav tabs (empty, ready for content)
+- **Original backup:** `ALDENHammersmith_IPAD-Surface-original.json` (user's original 2-page version)
+
+## Next Steps (when resuming)
+- Add Page2Panel content from original to Page_2
+- Consider adding transport buttons to all pages
+- Connect buttons to REAPER actions via OSC addresses
