@@ -37,10 +37,13 @@ if (value === 1) {
 
 ## Working with Sessions
 
+**IMPORTANT:** Always open .json session files in Open Stage Control, NOT in Xcode or other text editors. Use the command below.
+
 ### Opening a Session
 ```bash
-/Applications/open-stage-control.app/Contents/MacOS/open-stage-control --load "/path/to/session.json" &
-open "http://127.0.0.1:8080"
+pkill -f "open-stage-control" 2>/dev/null; sleep 1
+/Applications/open-stage-control.app/Contents/MacOS/open-stage-control --load "/Users/jahammersmith/projects/ipad-osc-surface/IPAD Surface 5Pages.json" &
+sleep 2 && open "http://127.0.0.1:8080"
 ```
 
 ### Editing Sessions
