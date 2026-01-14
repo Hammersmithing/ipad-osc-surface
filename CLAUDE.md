@@ -10,8 +10,8 @@ Developer: Alden Hammersmith
 - **DAW Integration**: REAPER via OSC protocol
 
 ## File Locations
-- **Git repo**: `/Users/jahammersmith/projects/ipad-osc-surface`
-- **Desktop working files**: `/Users/jahammersmith/Desktop/` (for testing)
+- **Git repo (development)**: `/Users/jahammersmith/projects/ipad-osc-surface`
+- **REAPER OSC folder (deployment)**: `/Users/jahammersmith/Library/Application Support/REAPER/Alden Hammersmith open-stage-control/`
 - **Open Stage Control app**: `/Applications/open-stage-control.app`
 
 ## Session Structure
@@ -86,12 +86,17 @@ or for custom scripts:
 
 ## Git Workflow
 
-### After Making Changes
+### After Making Changes (commit, push, and deploy)
 ```bash
 cd /Users/jahammersmith/projects/ipad-osc-surface
 git add .
 git commit -m "Description of changes"
 git push
+```
+
+### Deploy to REAPER folder
+```bash
+cp "/Users/jahammersmith/projects/ipad-osc-surface/IPAD Surface 5Pages.json" "/Users/jahammersmith/Library/Application Support/REAPER/Alden Hammersmith open-stage-control/"
 ```
 
 ### Backup Before Major Changes
