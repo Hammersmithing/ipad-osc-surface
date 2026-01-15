@@ -210,7 +210,7 @@ cp "session.json" "session_backup_YYYY-MM-DD.json"
 ## Current State
 - **Working session:** `IPAD Surface 5Pages.json`
 - **Page_1:** Transport at top, 32 other buttons in grid, 5 nav tabs at bottom
-- **Page_2:** 5 Midi Velocity Compressor buttons + nav tabs
+- **Page_2:** 5 Midi Velocity Compressor buttons (row 1), 6 Quantize Velocity Max buttons (row 2) + nav tabs
 - **Pages 3-5:** Only nav tabs (empty, ready for content)
 - **Original backup:** `ALDENHammersmith_IPAD-Surface-original.json` (user's original 2-page version)
 
