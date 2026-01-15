@@ -191,7 +191,8 @@ cp "session.json" "session_backup_YYYY-MM-DD.json"
 | p1_view_midieditor | MIDI Editor | View: Toggle show MIDI editor windows | 40716 |
 | p1_transport_fwd1 | FWD 1 Measure | ALDENHammersmith_Transport Playhead Forward 1 Measure.lua | script |
 | p1_transport_back1 | Back 1 Measure | ALDENHammersmith_Transport Playhead Backward 1 Measure.lua | script |
-| p1_view_unusedtracks | Toggle View Unused Tracks | ALDENHammersmith_Toggle Hide View All Unused Tracks.lua | script |
+| p1_view_unusedtracks | Show/Hide Unused Tracks | ALDENHammersmith_Toggle Hide View All Unused Tracks.lua | script |
+| p2_midi_velcomp5 | Vel Comp 5% | ALDENHammersmith_Midi Velocity Compressor 5%.lua | script (MIDI Editor) |
 
 ### How to Bind a Button
 1. Open REAPER → Actions → Show Action List
@@ -205,7 +206,8 @@ cp "session.json" "session_backup_YYYY-MM-DD.json"
 ## Current State
 - **Working session:** `IPAD Surface 5Pages.json`
 - **Page_1:** Transport at top, 32 other buttons in grid, 5 nav tabs at bottom
-- **Pages 2-5:** Only nav tabs (empty, ready for content)
+- **Page_2:** 5 Midi Velocity Compressor buttons + nav tabs
+- **Pages 3-5:** Only nav tabs (empty, ready for content)
 - **Original backup:** `ALDENHammersmith_IPAD-Surface-original.json` (user's original 2-page version)
 
 ## Next Steps (when resuming)
