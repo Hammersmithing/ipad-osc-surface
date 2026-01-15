@@ -184,7 +184,7 @@ cp "session.json" "session_backup_YYYY-MM-DD.json"
 
 **IMPORTANT:** Always use **lowercase** button IDs (e.g., `p1_transport_back1` NOT `P1_Transport_Back1Measure`). The OSC addresses are case-sensitive and must match the JSON button IDs exactly.
 
-**Spreadsheet Cleanup Note:** The OSC Buttons spreadsheet has old capitalized entries (rows 23-40) that are obsolete. Only the lowercase entries (row 41+) are correct. The old entries should be deleted.
+**Cleanup completed 2026-01-15:** Deleted old capitalized entries from spreadsheet. Only lowercase entries remain.
 
 | button_id | label | REAPER Action | Action ID |
 |-----------|-------|---------------|-----------|
