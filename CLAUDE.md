@@ -197,6 +197,12 @@ cp "session.json" "session_backup_YYYY-MM-DD.json"
 | p2_midi_velcomp30 | Vel Comp 30% | ALDENHammersmith_Midi Velocity Compressor 30%.lua | script (MIDI Editor) |
 | p2_midi_velcomp50 | Vel Comp 50% | ALDENHammersmith_Midi Velocity Compressor 50%.lua | script (MIDI Editor) |
 | p2_midi_velcompslider | Vel Comp Slider | ALDENHammersmith_Midi Velocity Linear Compressor Slider.lua | script (MIDI Editor) |
+| p2_midi_velmax20 | Vel Max 20 | ALDENHammersmith_Quantize Midi Velocity Max 20.lua | script (MIDI Editor) |
+| p2_midi_velmax40 | Vel Max 40 | ALDENHammersmith_Quantize Midi Velocity Max 40.lua | script (MIDI Editor) |
+| p2_midi_velmax60 | Vel Max 60 | ALDENHammersmith_Quantize Midi Velocity Max 60.lua | script (MIDI Editor) |
+| p2_midi_velmax80 | Vel Max 80 | ALDENHammersmith_Quantize Midi Velocity Max 80.lua | script (MIDI Editor) |
+| p2_midi_velmax100 | Vel Max 100 | ALDENHammersmith_Quantize Midi Velocity Max 100.lua | script (MIDI Editor) |
+| p2_midi_velmax120 | Vel Max 120 | ALDENHammersmith_Quantize Midi Velocity Max 120.lua | script (MIDI Editor) |
 
 ### How to Bind a Button
 1. Open REAPER → Actions → Show Action List
