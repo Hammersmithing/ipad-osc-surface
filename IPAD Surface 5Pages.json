@@ -1845,7 +1845,7 @@
             "html": "",
             "css": "",
             "colorTextOn": "auto",
-            "label": "Toggle View Unusued Tracks",
+            "label": "Show/Hide Unused Tracks",
             "vertical": false,
             "wrap": true,
             "on": 1,
