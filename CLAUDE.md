@@ -42,9 +42,18 @@ if (value === 1) {
 ### Opening a Session
 ```bash
 pkill -f "open-stage-control" 2>/dev/null; sleep 1
-/Applications/open-stage-control.app/Contents/MacOS/open-stage-control --load "/Users/jahammersmith/projects/ipad-osc-surface/IPAD Surface 5Pages.json" &
+/Applications/open-stage-control.app/Contents/MacOS/open-stage-control \
+  --send "127.0.0.1:8000" \
+  --osc-port 9000 \
+  --port 8080 \
+  --load "/Users/jahammersmith/Library/Application Support/REAPER/Alden Hammersmith open-stage-control/IPAD Surface 5Pages.json" &
 sleep 2 && open "http://127.0.0.1:8080"
 ```
+
+**OSC Settings (required for REAPER communication):**
+- `--send "127.0.0.1:8000"` - Send OSC to REAPER's listen port
+- `--osc-port 9000` - Receive OSC from REAPER on this port
+- `--port 8080` - Web interface port
 
 ### Editing Sessions
 1. Open in Open Stage Control
@@ -167,6 +176,24 @@ cp "session.json" "session_backup_YYYY-MM-DD.json"
 - 2026-01-14: Page_1 has 43 widgets total (38 buttons + 5 nav tabs)
 - 2026-01-14: Pages 2-5 are empty (ready for future content)
 - 2026-01-14: Set up Google Sheets tracker (Json OSC Tracker) with API integration
+- 2026-01-15: Added p1_view_midieditor button (MIDI Editor toggle)
+- 2026-01-15: Fixed OSC launch command to include --send and --osc-port flags
+
+## Bound Buttons Registry
+*Buttons that have been bound to REAPER actions via Action List*
+
+| button_id | label | REAPER Action | Action ID |
+|-----------|-------|---------------|-----------|
+| p1_view_midieditor | MIDI Editor | View: Toggle show MIDI editor windows | 40716 |
+
+### How to Bind a Button
+1. Open REAPER → Actions → Show Action List
+2. Search for the action you want
+3. Select it → click **Add...**
+4. Choose OSC binding option
+5. Tap the button on your iPad surface
+6. The OSC address (e.g., `/p1_view_midieditor`) appears in shortcuts
+7. Update this registry and the Google Sheets tracker
 
 ## Current State
 - **Working session:** `IPAD Surface 5Pages.json`
