@@ -193,6 +193,10 @@ cp "session.json" "session_backup_YYYY-MM-DD.json"
 | p1_transport_back1 | Back 1 Measure | ALDENHammersmith_Transport Playhead Backward 1 Measure.lua | script |
 | p1_view_unusedtracks | Show/Hide Unused Tracks | ALDENHammersmith_Toggle Hide View All Unused Tracks.lua | script |
 | p2_midi_velcomp5 | Vel Comp 5% | ALDENHammersmith_Midi Velocity Compressor 5%.lua | script (MIDI Editor) |
+| p2_midi_velcomp20 | Vel Comp 20% | ALDENHammersmith_Midi Velocity Compressor 20%.lua | script (MIDI Editor) |
+| p2_midi_velcomp30 | Vel Comp 30% | ALDENHammersmith_Midi Velocity Compressor 30%.lua | script (MIDI Editor) |
+| p2_midi_velcomp50 | Vel Comp 50% | ALDENHammersmith_Midi Velocity Compressor 50%.lua | script (MIDI Editor) |
+| p2_midi_velcompslider | Vel Comp Slider | ALDENHammersmith_Midi Velocity Linear Compressor Slider.lua | script (MIDI Editor) |
 
 ### How to Bind a Button
 1. Open REAPER → Actions → Show Action List
