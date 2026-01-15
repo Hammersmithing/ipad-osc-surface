@@ -182,6 +182,10 @@ cp "session.json" "session_backup_YYYY-MM-DD.json"
 ## Bound Buttons Registry
 *Buttons that have been bound to REAPER actions via Action List*
 
+**IMPORTANT:** Always use **lowercase** button IDs (e.g., `p1_transport_back1` NOT `P1_Transport_Back1Measure`). The OSC addresses are case-sensitive and must match the JSON button IDs exactly.
+
+**Spreadsheet Cleanup Note:** The OSC Buttons spreadsheet has old capitalized entries (rows 23-40) that are obsolete. Only the lowercase entries (row 41+) are correct. The old entries should be deleted.
+
 | button_id | label | REAPER Action | Action ID |
 |-----------|-------|---------------|-----------|
 | p1_view_midieditor | MIDI Editor | View: Toggle show MIDI editor windows | 40716 |
