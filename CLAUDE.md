@@ -178,6 +178,11 @@ cp "session.json" "session_backup_YYYY-MM-DD.json"
 - 2026-01-14: Set up Google Sheets tracker (Json OSC Tracker) with API integration
 - 2026-01-15: Added p1_view_midieditor button (MIDI Editor toggle)
 - 2026-01-15: Fixed OSC launch command to include --send and --osc-port flags
+- 2026-01-15: Added p1_view_unusedtracks button (Show/Hide Unused Tracks)
+- 2026-01-15: Created Page 2 with MIDI velocity tools (11 buttons total)
+- 2026-01-15: Row 1: 5 Velocity Compressor buttons (5%, 20%, 30%, 50%, Slider)
+- 2026-01-15: Row 2: 6 Velocity Max buttons (20, 40, 60, 80, 100, 120)
+- 2026-01-15: All Page 2 buttons bound to MIDI Editor section scripts
 
 ## Bound Buttons Registry
 *Buttons that have been bound to REAPER actions via Action List*
@@ -221,6 +226,7 @@ cp "session.json" "session_backup_YYYY-MM-DD.json"
 - **Original backup:** `ALDENHammersmith_IPAD-Surface-original.json` (user's original 2-page version)
 
 ## Next Steps (when resuming)
-- Add Page2Panel content from original to Page_2
+- Continue adding MIDI tools to Page 2 (more rows available)
 - Consider adding transport buttons to all pages
-- Connect buttons to REAPER actions via OSC addresses
+- Pages 3-5 available for other categories (Tracks, Rendering, etc.)
+- Continue script cleanup project (256 scripts remaining)
