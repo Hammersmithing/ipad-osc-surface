@@ -185,6 +185,8 @@ cp "session.json" "session_backup_YYYY-MM-DD.json"
 | button_id | label | REAPER Action | Action ID |
 |-----------|-------|---------------|-----------|
 | p1_view_midieditor | MIDI Editor | View: Toggle show MIDI editor windows | 40716 |
+| p1_transport_fwd1 | FWD 1 Measure | ALDENHammersmith_Transport Playhead Forward 1 Measure.lua | script |
+| p1_transport_back1 | Back 1 Measure | ALDENHammersmith_Transport Playhead Backward 1 Measure.lua | script |
 
 ### How to Bind a Button
 1. Open REAPER → Actions → Show Action List
